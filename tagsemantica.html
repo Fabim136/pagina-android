@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags semanticas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 4px rgba(0,0,0,0.384);
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: rgb(165, 165, 165);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        .links {
+            text-align: center;
+            background-color: rgb(119, 119, 119);
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            
+        }
+        .links > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+        }
+
+        .links > a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+
+        footer {
+            margin: 4px;
+        }
+
+        #bola {
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 20px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav class="links">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+            </article>
+            <article>
+                <h2>Título</h2>
+                <p>Texto do artigo</p>
+                <aside>
+                    <p>conteúdo periférico do artigo</p>
+                </aside>
+            </article>
+        </section>
+        <section>
+            <article>
+                <aside>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta fugit placeat omnis vel possimus, magnam expedita officia quaerat porro mollitia quo aspernatur eius. Unde fugit autem odit veniam dolorum ratione.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        conteúdo do rodapé
+    </footer>
+
+    <div id="bola"></div>
+</body>
+
+</html>
